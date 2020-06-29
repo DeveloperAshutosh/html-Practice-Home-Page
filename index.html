@@ -1,51 +1,102 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Home | Ashutosh Kaushal </title>
-        <meta name="viewport" content="width=device-width ,initial-scale=1.0">
-        <!--meta data -->
-        <meta charset="UTF-8">
+  <head>
+    <title>Home | Ashutosh Kaushal</title>
+    <!-- Set the character set, so the browser knows which character set should be loaded and valid for this webpage. -->
+    <meta charset="UTF-8">
+    <!-- For modern responsive web development: -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta Data: -->
+    <meta name="description" content="A website about Warren Uhrich.">
+    <meta name="author" content="Warren Uhrich">
+    <!-- Style(s): -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Script(s): -->
+    <!-- defer attribute will cause this script to wait until the body is loaded before executing (important for DOM / element manipulation by scripts) -->
+    <script src="js/scripts.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <h1>Home</h1>
+    <header>
+      <h2>Navigation</h2>
+      <nav><!-- Navigation. -->
+        <ul>
+          <li><a href="index.html">Home</a><!-- Anchor element (hyperlink.) --></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h2>Skills</h2>
+    <p><!-- Paragraph. -->
+      Here are some of my skills:
+    </p>
+    <ul><!-- Unordered list. -->
+      <li>HTML5</li><!-- List item (the ONLY element allowed directly inside <ul> and <ol>) -->
+      <li>CSS3</li>
+      <li>PHP</li>
+    </ul>
+    <article>
+    <h2>My Favourite Pictures</h2>
+    <p>
+        Below are some of my favourit pics
+    </p>
 
-        <meta name="discription" content="A website about Ashutosh">
-        <meta name="author" content="Ashutosh kaushal">
-        <!-- styles-->
-
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-         <!-- Scripts defer atribiut will cause this page to wait untill the body is loaded-->
-         <script src="js/scripts.js" type="text/javascript  " defer></script>
-    </head>
-    <body>
-        <h1>Home</h1>
-        <h2>Navigation</h2>
-        <nav>
-            <a href="index.html">Home</a>
-        </nav>
-        <h2>Skils</h2>
+    
+    <p>
+      I'd like to share with each of you, my very favourite picture! It is of an beautifull pic of flowers. Very cool, check it out below!
+    </p>
+    <figure>
+      <!-- src is the location of the image. -->
+      <!-- alt is "alternate text" to describe the image. -->
+      <!-- title is a "pop-up" tooltip, for when you hover over the element. -->
+      <img src="img/poppy-5270458_640.jpg" alt="beautifull flowers" title="beautifull flowers">
+      <figcaption>
+        Illustration credited to:
+        <!-- target="_blank" makes the link open in a brand new tab (leaving the original tab open.) -->
+        <a href="https://pixabay.com/users/rdaudt-7418264/" target="_blank" title="Click here to view the original author's profile.">
+          rdaudt
+        </a>
+      </figcaption>
+     </figure>
+     </article>
+    <main>
+      <h2>Skills</h2>
+      <p><!-- Paragraph. -->
+        Here are some of my skills:
+      </p>
+      <ul><!-- Unordered list. -->
+        <li>HTML5</li><!-- List item (the ONLY element allowed directly inside <ul> and <ol>) -->
+        <li>CSS3</li>
+        <li>PHP</li>
+      </ul>
+      <h2>My Favourite Picture</h2>
+      <p>
+        I'd like to share with each of you, my very favourite picture! It is of an illustration featuring wind turbines. Very cool, check it out below!
+      </p>
+      <figure>
+        <!-- src is the location of the image. -->
+        <!-- alt is "alternate text" to describe the image. -->
+        <!-- title is a "pop-up" tooltip, for when you hover over the element. -->
+        <img src="img/wind-turbines-illustration.jpg" alt="A blue illustration of wind turbines." title="A blue illustration of wind turbines.">
+        <figcaption>
+          Illustration credited to:
+          <!-- target="_blank" makes the link open in a brand new tab (leaving the original tab open.) -->
+          <a href="https://pixabay.com/users/rdaudt-7418264/" target="_blank" title="Click here to view the original author's profile.">
+            rdaudt
+          </a>
+        </figcaption>
+      </figure>
+    </main>
+    <footer>
+      <h2>Footer</h2>
+      <p>Thanks for visiting my page</p>
+      <div>
         <p>
-            Here are some of my skills:
-        </p>
-            <ul>
-                <li>Html5</li>
-                <li>CSS3</li>
-                <li>PHP</li>
-            </ul>
-            <h2>My favourit pic</h2>
-            <p>
-                I would like to share my favourite pic
-                it has beautiful flowers ,very cool please check it out!
-            </p>
-            <figure>
-                <img src="img/poppy-5270458_640.jpg" alt="beautifull flowers " title="beautifull flowers">
-                <figcaption>
-                    illustration credited to:
-                    <a href="https://pixabay.com/photos/poppy-cornflower-flower-meadow-5270458/"
-                     target="_blank" title="click here to view original auther's profile">
-                    rdaudt
-                </a>
-
-                </figcaption>
-            </figure>
-               
-            
-    </body>
+            &copy; Copyright 2020 <span>TECHCareers </span> ;
+            All Rights Reserved
+          </p>
+      </div>
+      
+    </footer>
+  </body>
 </html>
